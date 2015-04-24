@@ -6,6 +6,7 @@ This is the pinteresting sample application for
 by [Aaron Taddiken](http://mapcentrix.com)
 
 Terminal Command for pushing saves to git:
+git add .
 git commit -am "comments here"
 git push 
 (enter password: xxx90909)
