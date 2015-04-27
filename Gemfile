@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 ruby '2.0.0'
 
 gem 'rails', '4.2.1'
@@ -10,6 +11,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass' 
 gem 'devise', '~>3.4.1.rc2'
+gem 'gmaps4rails'
+gem 'underscore-rails', '~>1.8.2.rc2'
+gem 'rails-assets-underscore'
 
 group :development, :test do
   gem 'sqlite3'
