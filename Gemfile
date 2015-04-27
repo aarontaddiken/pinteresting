@@ -14,6 +14,7 @@ gem 'devise', '~>3.4.1.rc2'
 gem 'gmaps4rails'
 gem 'underscore-rails', '~>1.8.2.rc2'
 gem 'rails-assets-underscore'
+gem 'paperclip', '~> 4.1'
 
 group :development, :test do
   gem 'sqlite3'

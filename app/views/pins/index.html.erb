@@ -5,9 +5,10 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Description String</th>
       <th>User</th>
-      <th colspan="4"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -15,13 +16,16 @@
     <% @pins.each do |pin| %>
     <% pin.user.email if pin.user %>
       <tr>
+        <td><%= image_tag pin.image.url(:medium) %></td>
         <td><%= pin.description %></td>
         <td><%= pin.user.email if pin.user %></td>
         <td><%= pin.string %></td>
-        <td><%= link_to 'Show', pin, class: "btn btn-default btn-sm" %></td>
+        <td><%= link_to 'Show', pin %></td>
       <% if pin.user == current_user %>
-        <td><%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-default btn-sm" %></td>
-        <td><%= link_to 'Destroy', pin, class: "btn btn-primary btn-sm", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
+        <div class="brand-danger">
+          <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </div>
       <% end %>
       </tr>
     <% end %>
