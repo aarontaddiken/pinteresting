@@ -15,6 +15,7 @@ gem 'gmaps4rails'
 gem 'underscore-rails', '~>1.8.2.rc2'
 gem 'rails-assets-underscore'
 gem 'paperclip', '~> 4.1'
+gem 'aws-sdk', '~>2.0.4'
 
 group :development, :test do
   gem 'sqlite3'
