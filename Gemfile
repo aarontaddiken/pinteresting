@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass' 
 gem 'devise', '~>3.4.1.rc2'
@@ -16,6 +17,8 @@ gem 'underscore-rails', '~>1.8.2.rc2'
 gem 'rails-assets-underscore'
 gem 'paperclip', '~> 4.1'
 gem 'aws-sdk-v1'
+gem 'masonry-rails', '0.2.4'
+
 
 group :development, :test do
   gem 'sqlite3'
