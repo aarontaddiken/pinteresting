@@ -1,44 +1,46 @@
-<div class="well well-sm center">
-<h2><%= link_to "Sign in", "#", class: "btn btn-default btn-sm" %>   Welcome To Mapcentrix!   <%= link_to "Sign up", "#", class: "btn btn-primary btn-sm" %></h2>
+<div class="jumbotron">
 </div>
+	<div class="panel panel-default">
+		<div class="panel-heading"><h2><strong>With our new utility, you can import MapCentrix invoices into QuickBooks.</strong></h2></div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-8">
+												<h2>HOW IT WORKS:</h2>
+						<p>The program will access your MapCentrix customer and invoice data on our servers and create an import file in QuickBooks format (.iif).  This file can be read by Excel if you ever need to see the details (like to look at the line number specified in a QB error).
+						</p></br>
+						<p>The export file is created and sent to the email address you specify in the program setup.  You download the file from the email to your computer and then use the import function in QuickBooks.</p> 
+						<h2>The file updates the following in QuickBooks:</h2>
+						Service Types (PHC, Tree Care, etc. which are used for you GL Income account)
+						Customers - for changes to address, sales arborist, phone, email, etc.
+						Services (in QuickBooks these are your “items” list)
+						Invoices from the date range you specify, or all un-exported invoices.
 
-<div class="row">
-		<div class="col-md-8">
-				<p>With our new utility, you can import MapCentrix invoices into QuickBooks.  Here’s what you need to know…
+						<h2>INITIAL SETUP:</h2>
+						<p>Synchronize your QB items with your MapCentrix services. In many cases these are a direct match, but due to a 31 character limit in QB, they may differ slightly.</p></br>
+						<p>Enter your QuickBooks AR and Income account names - this is what you will post to.</p></br>
+						<p>Set option for GL Income Account - do you want Service Types to be top level Income Accounts, or sub-accounts in the GL.</p></br>
+						<p>Set the email address to send the import file.</p></br>
+						<p><strong>Make sure your MapCentrix customer names are not vendors in QuickBooks.</strong> QB treats all names (customers, vendors, employees, contacts) as one list. Each entry must be unique. If you have a Vendor who is also a Customer, you will have them listed twice in QB, but the names will have to be different.  MapCentrix needs to use the Customer name, not the Vendor name. You will get an error from QuickBooks the first time you try to do this, so it may be easier just to wait to get the error.</p></br>
+						<p>Set the options for new invoices “To print” and “To email” in QuickBooks.</p>
+						<p>We need to mark the invoices you have already exported to QuickBooks so they will not be included in the “un-exported” range.
+						</p>  <p>Generally we will do this for all invoices before a date you specify. In any case, QuickBooks does notify you when importing a duplicate invoice number.</p>
 
-			<h2>HOW IT WORKS:</h2>
-			<p>The program will access your MapCentrix customer and invoice data on our servers and create an import file in QuickBooks format (.iif).  This file can be read by Excel if you ever need to see the details (like to look at the line number specified in a QB error).
-			</p></br>
-			<p>The export file is created and sent to the email address you specify in the program setup.  You download the file from the email to your computer and then use the import function in QuickBooks.</p> 
-			<h2>The file updates the following in QuickBooks:</h2>
-			Service Types (PHC, Tree Care, etc. which are used for you GL Income account)
-			Customers - for changes to address, sales arborist, phone, email, etc.
-			Services (in QuickBooks these are your “items” list)
-			Invoices from the date range you specify, or all un-exported invoices.
-
-			<h2>INITIAL SETUP:</h2>
-			<p>Synchronize your QB items with your MapCentrix services. In many cases these are a direct match, but due to a 31 character limit in QB, they may differ slightly.</p></br>
-			<p>Enter your QuickBooks AR and Income account names - this is what you will post to.</p></br>
-			<p>Set option for GL Income Account - do you want Service Types to be top level Income Accounts, or sub-accounts in the GL.</p></br>
-			<p>Set the email address to send the import file.</p></br>
-			<p><strong>Make sure your MapCentrix customer names are not vendors in QuickBooks.</strong> QB treats all names (customers, vendors, employees, contacts) as one list. Each entry must be unique. If you have a Vendor who is also a Customer, you will have them listed twice in QB, but the names will have to be different.  MapCentrix needs to use the Customer name, not the Vendor name. You will get an error from QuickBooks the first time you try to do this, so it may be easier just to wait to get the error.</p></br>
-			<p>Set the options for new invoices “To print” and “To email” in QuickBooks.</p>
-			<p>We need to mark the invoices you have already exported to QuickBooks so they will not be included in the “un-exported” range.
-			</p>  <p>Generally we will do this for all invoices before a date you specify. In any case, QuickBooks does notify you when importing a duplicate invoice number.</p>
-
-			<h2>DAILY OPERATION:</h2>
-			<p>Especially when you are new to the program, be sure to back up your QB data before you do an import.  This ensures that if something happens you can quickly recover.  Once you get everything set up and running on a regular basis, this may not be necessary.
-			Log into the program using your MapCentrix user name at winapp.mapcentrix.com</p>
-			<h3>Select a date range or “un-exported” invoices.<h3>
-			<h3>Create and email the file.</h3>
-			<p>On your local computer, open and download the file from the email.</p>
-			<h3>Note you QB AR balance.</h3>
-			<h3>Open QuickBooks and import the file.</h3>
-			<h3>Confirm that your QB AR total has increased by the amount in the email. (This confirms that all invoices were imported)
-			Return to the MapCentrix program and mark those invoice “exported”</h3>
-			<h3>The entire process takes just a few minutes.</h3>
-
-			<h2>TO START:</h2>
-			<p>Send us the MapCentrix login name (not password) of the person who will be running the program.  With that, we will set up a login for the utility and then contact you to get started.</p>
-	</div>
-</div>
+						<h2>DAILY OPERATION:</h2>
+						<p><strong>Especially when you are new to the program, be sure to back up your QB data before you do an import.</strong>  This ensures that if something happens you can quickly recover.  Once you get everything set up and running on a regular basis, this may not be necessary.
+						Log into the program using your MapCentrix user name at winapp.mapcentrix.com</p>
+						<ul>
+							<li><h4>Select a date range or “un-exported” invoices.<h4></li>
+							<li><h4>Create and email the file.</h4></li>
+							<li><h4>On your local computer, open and download the file from the email.</h4></li>
+							<li><h4>Note you QB AR balance.</h4></li>
+							<li><h4>Open QuickBooks and import the file.</h4></li>
+							<li><h4>Confirm that your QB AR total has increased by the amount in the email. (This confirms that all invoices were imported)
+							Return to the MapCentrix program and mark those invoice “exported”</h4></li>
+							<li><h4>The entire process takes just a few minutes.</h4></li>
+					  </ul>
+					  <h4>TO START:</h4>
+						<p>Send us the MapCentrix login name (not password) of the person who will be running the program.  With that, we will set up a login for the utility and then contact you to get started.</p>
+						</div>
+					</div>
+			</div>
+		</div>

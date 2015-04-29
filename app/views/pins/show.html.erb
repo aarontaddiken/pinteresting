@@ -1,3 +1,5 @@
+<div class="page-header">
+</div>
 <%= link_to 'Back to all pins', pins_path %>
 
 <div class="row">
@@ -11,11 +13,17 @@
 			<p><strong><%= @pin.user.email if @pin.user %></strong></p>
 
 			<% if @pin.user == current_user %>
-				<%= link_to edit_pin_path(@pin) do %>
-          <span class="glyphicon glyphicon-pencil"></span>
-          edit
-        <% end %>
-      <% end %>
+				<ul class="nav nav-pillars">
+		  				<%= link_to edit_pin_path(@pin) do %>
+		          <li role="presentation" class="glyphicon glyphicon-pencil"></span></li>
+		          edit
+		        	<% end %>  
+							<%= link_to pins_path do %>
+		         	<li role="presentation" class="glyphicon glyphicon-edit"></span></li>
+		          back to all pins
+		        <% end %>
+		    </ul>
+	    <% end %>
 		</div>
 	</div>
 </div>
